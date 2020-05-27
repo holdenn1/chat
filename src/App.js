@@ -1,10 +1,12 @@
 import React from 'react';
+import Auth from "./pages/Auth";
 
-function App() {
+
+function App () {
   return (
-    <div className='wrapper'>
-    <h1>Hello World</h1>
-    </div>
+     <div className='wrapper'>
+       <Auth/>
+     </div>
   );
 }
 
