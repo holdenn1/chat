@@ -30,6 +30,20 @@
     }
   }
 
+  &__success-block{
+    text-align: center;
+    h3{
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    p{
+      font-size: 16px;
+    }
+
+  }
+
+
+
   .button{
     text-transform: uppercase;
     font-weight: 500;
