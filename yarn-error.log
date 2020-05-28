@@ -1,5 +1,5 @@
 Arguments: 
-  /home/ihor_ivliev/.nvm/versions/node/v12.14.0/bin/node /usr/share/yarn/bin/yarn.js init
+  /home/ihor_ivliev/.nvm/versions/node/v12.14.0/bin/node /usr/share/yarn/bin/yarn.js add dade-fns
 
 PATH: 
   /home/ihor_ivliev/.nvm/versions/node/v12.14.0/bin:/home/ihor_ivliev/IdeaProjects/chat/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,17 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137008:13)
-      at Interface.emit (events.js:210:5)
-      at Interface._ttyWrite (readline.js:887:16)
-      at ReadStream.onkeypress (readline.js:191:10)
-      at ReadStream.emit (events.js:210:5)
-      at emitKeys (internal/readline/utils.js:433:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1153:36)
-      at ReadStream.emit (events.js:210:5)
-      at addChunk (_stream_readable.js:309:12)
+  Error: https://registry.yarnpkg.com/dade-fns: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1184:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -50,6 +50,7 @@ npm manifest:
       "case-sensitive-paths-webpack-plugin": "2.3.0",
       "classnames": "^2.2.6",
       "css-loader": "3.4.2",
+      "date-fns": "^2.14.0",
       "dotenv": "8.2.0",
       "dotenv-expand": "5.1.0",
       "eslint": "^6.6.0",
@@ -83,6 +84,7 @@ npm manifest:
       "react-dom": "^16.13.1",
       "react-router": "^5.2.0",
       "react-router-dom": "^5.2.0",
+      "reset-css": "^5.0.1",
       "resolve": "1.15.0",
       "resolve-url-loader": "3.1.1",
       "sass-loader": "8.0.2",
@@ -170,7 +172,11 @@ npm manifest:
       "presets": [
         "react-app"
       ]
-    }
+    },
+    "main": "index.js",
+    "repository": "https://github.com/holdenn1/chat.git",
+    "author": "Ihor Ivliev <igor852745@gmail.com>",
+    "license": "MIT"
   }
 
 yarn manifest: 
@@ -3891,6 +3897,11 @@ Lockfile:
       abab "^2.0.0"
       whatwg-mimetype "^2.2.0"
       whatwg-url "^7.0.0"
+  
+  date-fns@^2.14.0:
+    version "2.14.0"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.14.0.tgz#359a87a265bb34ef2e38f93ecf63ac453f9bc7ba"
+    integrity sha512-1zD+68jhFgDIM0rF05rcwYO8cExdNqxjq4xP1QKM60Q45mnO6zaMWB4tOzrIr4M4GSLntsKeE4c9Bdl2jhL/yw==
   
   debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
     version "2.6.9"
@@ -9950,6 +9961,11 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
     integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+  
+  reset-css@^5.0.1:
+    version "5.0.1"
+    resolved "https://registry.yarnpkg.com/reset-css/-/reset-css-5.0.1.tgz#1ced0604fdb6836567e40d82de3537afaf3bb4c8"
+    integrity sha512-VyuJdNFfp5x/W6e5wauJM59C02Vs0P22sxzZGhQMPaqu/NGTeFxlBFOOw3eq9vQd19gIDdZp7zi89ylyKOJ33Q==
   
   resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
     version "1.5.1"
